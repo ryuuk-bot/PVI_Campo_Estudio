@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Vocacional | Bachillerato Inicia UC</title>
+        <link rel="stylesheet" href="styles.css">
+        <img src="Sellos fotos2 (2).png" alt="Logo Bachillerato Inicia UC" class="logo" width="480">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <h1>Descubre tu Campo de Estudio</h1>
+
+            <div class="question">
+                <h2>¿Con qué te gustaría trabajar?</h2>
+                <!-- Selector 1 -->
+                <select id="objectType">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="Comunidades">Comunidades</option>
+                    <option value="Datos">Datos</option>
+                    <option value="Hechos">Hechos</option>
+                    <option value="Personas">Personas</option>
+                    <option value="Fenómenos">Fenómenos</option>
+                    <option value="Objetos">Objetos</option>
+                    <option value="Tecnología">Tecnología</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <h2>¿En qué acción te gustaría aplicarlo?</h2>
+                <!-- Selector 2 -->
+                <select id="taskType" disabled>
+                    <option value="">-- Primero responde la pregunta anterior --</option>
+                    
+                </select>
+            </div>
+
+            <div class="question">
+                <h2>¿Dónde te gustaría desempeñarte?</h2>
+                <!-- Selector 3 -->
+                <select id="fieldType" disabled>
+                    <option value="">-- Primero responde la pregunta anterior --</option>
+                </select>
+            </div>
+            
+            <!-- Botón Reiniciar -->
+            <button type="button" id="resetButton">Reiniciar</button>
+
+            <div id="result" class="result"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
